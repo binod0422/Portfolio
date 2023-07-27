@@ -7,32 +7,28 @@
   <title>My Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link href="styles.css" rel="stylesheet">
+  <link href="portfolio.css" rel="stylesheet">
 </head>
 
 <body>
 
   <!-- Navbar start -->
-  <div class="container-fluid">
-    <div class="row">
-      <nav class="navbar navbar-expand-lg ">
-        <a class="navbar-brand ms-2" href="#">Binod</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse show me-2 ms-2 justify-content-md-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Projects</a>
-            <a class="nav-link" href="#">Contact</a>
-            <a class="nav-link" href="#">Resume</a>
-          </div>
-        </div>
+  <nav class="navbar sticky-top navbar-expand-lg ">
+    <a class="navbar-brand ms-2" href="#">Binod</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse show me-2 ms-2 justify-content-md-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="#resume">Resume</a>
+      </div>
     </div>
-    </nav>
-  </div>
+  </nav>
   <!-- Navbar end -->
 
   <!-- Starting main section -->
@@ -49,34 +45,162 @@
     <!-- end of row -->
   </div>
   <!-- end of main section-->
-  <div class="container-fluid about-me">
+  <div class="container-fluid about-me pb-2">
     <div class="row">
       <div class="col">
-        <h2>About Me</h2>
-        <p>Hi from Reynoldsburg, OH! I'm Binod, a passionate Software Developer on a mission to conquer the world of technology 🚀. I'm always learning and growing, and I bring a unique combination of academic brilliance and real-world expertise to my work.
-          I graduated from Franklin University with a Bachelor's degree in Information Technology with honors 🎓. Then, I joined GenerationUSA to master web development fundamentals like JavaScript, Java programming, and Spring Boot. I'm skilled in testing, troubleshooting, and debugging web applications, and I'm always looking for innovative solutions 💡.</p>         
-          <p>I'm not a lone wolf 🐺—I love working with others to create groundbreaking solutions using Java, JavaScript, Spring, REST APIs, and more. Let's create amazing applications that impress clients and stakeholders alike!
-          If you're looking for a Software Developer with a passion for learning and innovation, I'm your guy 🙋‍♂️. Connect with me, and let's embark on an epic journey of creativity, collaboration, and success!</p>
+        <h2 id="about">About Me</h2>
+        <p>Hi from Reynoldsburg, OH! I'm Binod, a passionate Software Developer on a mission to conquer the world of
+          technology 🚀. I'm always learning and growing, and I bring a unique combination of academic brilliance and
+          real-world expertise to my work.
+          I graduated from Franklin University with a Bachelor's degree in Information Technology with honors 🎓. Then,
+          I joined GenerationUSA to master web development fundamentals like JavaScript, Java programming, and Spring
+          Boot. I'm skilled in testing, troubleshooting, and debugging web applications, and I'm always looking for
+          innovative solutions 💡.</p>
+        <p>I'm not a lone wolf 🐺—I love working with others to create groundbreaking solutions using Java, JavaScript,
+          Spring, REST APIs, and more. Let's create amazing applications that impress clients and stakeholders alike!
+          If you're looking for a Software Developer with a passion for learning and innovation, I'm your guy 🙋‍♂️.
+          Connect with me, and let's embark on an epic journey of creativity, collaboration, and success!</p>
       </div>
       <!-- start of column -->
       <div class="col">
-        <div class="cards" >
-          <figure class=" card">
-              <img src="./images/Subject2.png"  width="350" height="500">
-              <figcaption class="card_title"></figcaption>
-          </figure>
+        <figure class="picture-card">
+          <img src="./images/Subject2.png" width="350" height="500">
+          <figcaption></figcaption>
+        </figure>
       </div>
+    </div>
+    <!-- end of column -->
+  </div>
+  </div>
+
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col mt-3">
+        <h2 id="projects">Projects</h2>
       </div>
-      <!-- end of column -->
     </div>
   </div>
+  <div class="container-fluid projects pb-5">
+    <div class="row">
+      <div class="col">
+        <div class="row row-cols-1 row-cols-sm-2 g-3">
+          <div class="col-xl-4">
+            <a href="./theweatherapp/weather.html" class="card-link">
+              <div class="card">
+                <img src="/images/theweatherapp.png" height="250" width="10" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                  <h5 class="card-title">The Weather App</h5>
+                  <p class="card-text">This application allows users to easily look up the weather conditions for their
+                    desired locations. In the process of creating this application, I gained valuable expertise in
+                    making Fetch requests to retrieve data from an external API.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4">
+            <a href="./themoviefinder/moviefinder.html" class="card-link">
+              <div class="card">
+                <img src="/images/moviefinder.png" class="card-img-top" alt="card-grid-image">
+                <div class="card-body">
+                  <h5 class="card-title">Movie Explorer</h5>
+                  <p class="card-text">
+                    Introducing the Movie Explorer App - your ultimate movie recommendation guide! Select a genre, and
+                    instantly receive captivating movie suggestions tailored to your taste.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-4">
+            <a href="/takesomenotes/notetaker.html" class="card-link">
+              <div class="card">
+                <img src="/images/notetaker.png" height="265" class="card-img-top" alt="notetakerapp">
+                <div class="card-body">
+                  <h5 class="card-title">Note Taking App</h5>
+                  <p class="card-text">Introducing an elegent note-taking app that seamlessly captures your thoughts. With the ability to effortlessly add and delete notes, this user-friendly application automatically saves your entries to local storage, ensuring your ideas are secure and always within reach.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start of row -->
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+        <div class="col contact text-center">
+            <h4 class="ps-3" id="contact">Contact me</h4>
+            <!-- start of form -->
+            <form action="" method="GET">
+                <div class="form-group">
+                  <label for="name">Name: <span style="color:red;">*</span></label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email: <span style="color:red;">*</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea class="form-control" id="message" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>                                     
+            <!-- end of form -->
+            <h4 class="p-2">Connect with me</h4>
+            <button class="btn-white">
+              <a href="https://www.linkedin.com/in/04-22-binod-acharya/" target="_blank">
+                <img class="ms-2 linkedin-icon" src="./Logos/linkedinlogo.png" alt="linkedinlogo">
+              </a>
+            </button>
+            
+            <button class="btn-white">
+              <a href="https://github.com/binod0422" target="_blank">
+                <img class="ms-2 github-icon" src="./Logos/githublogo.png" alt="githublogo">
+              </a>
+            </button>                                 
+        </div>
+    </div>
+  </div>
+<!-- end of row -->
+
+<!-- Start of footer -->
+  <div class="container-fluid footer">
+    <div class="row" >
+      <div class="col-lg-6 text-center">
+        <h5>Address:</h5>
+        <p>Columbus, OH 43068</p>
+      </div>
+      <div class="col-lg-6 text-center">
+        <h5>Email:</h5>
+        <p>acharyabinod0422@gmail.com</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p class="text-center">&copy; 2023 Binod Acharya</p>
+      </div>
+    </div>
+  </div>
+<!-- end of footer -->
+
+
+
+
+
+
+
+
 
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  <script src="portfolio.js"></script>
 </body>
 
 </html>
