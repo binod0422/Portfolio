@@ -53,6 +53,8 @@ const isValidEmail = (email) => {
 const validateInputs = () => {
   const usernameValue = username.value.trim();
   const emailValue = email.value.trim();
+  const messageValue = message.value.trim(); // Get the value of the message
+
   let isValid = true;
 
   if (usernameValue === '') {
@@ -70,6 +72,14 @@ const validateInputs = () => {
     isValid = false;
   } else {
     setSuccess(email);
+  }
+
+  
+  if (messageValue.length > 500) { // Check if the message is longer than 500 characters
+    setError(message, 'Message must be less than 500 characters');
+    isValid = false;
+  } else {
+    setSuccess(message);
   }
 
   if (isValid) {
