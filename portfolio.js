@@ -118,7 +118,7 @@ async function postingFormInfo() {
     console.log(data);
 
     // Assuming the server returns a success message, you can display it to the user
-    alert("Form submitted successfully!");
+    alert("Thank you! I'll reach out soon!");
 
     // Reset the form fields after successful submission
     document.getElementById("form").reset();
