@@ -97,9 +97,9 @@ async function postingFormInfo() {
 
   try {
     const formData = {
-      name: nameInput,
-      email: emailInput,
-      message: messageInput,
+      name: nameInput.trim(),
+      email: emailInput.trim(),
+      message: messageInput.trim(),
     };
 
     const response = await fetch("http://localhost:8080/api/user", {
@@ -118,7 +118,7 @@ async function postingFormInfo() {
     console.log(data);
 
     // Assuming the server returns a success message, you can display it to the user
-    alert("Thank you! I'll reach out soon!");
+    alert("Thank you! " + nameInput.trim() + ", I'll reach out to you soon!");
 
     // Reset the form fields after successful submission
     document.getElementById("form").reset();
