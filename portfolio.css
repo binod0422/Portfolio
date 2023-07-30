@@ -5,6 +5,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background-color: #DEF2F1;
   color: #edf6f9;
   font-family: 'Lato', 'Helvetica', 'Times New Roman', sans-serif;
@@ -42,7 +43,7 @@ h2 {
 }
 
 /* button styles */
-.btn:hover, .learn-more-btn:hover, .navbar-brand:hover {
+.btn:hover, .learn-more-btn:hover {
   background-color: #17252A; 
   color: #3AAfA9;
   transform: scale(1.1);
@@ -60,7 +61,6 @@ h2 {
   border-radius: 1%; 
   color: #edf6f9; 
   background-color: rgba(58, 175, 169,.9);
-
 }
 
 .about-me {
@@ -81,7 +81,6 @@ h2 {
   height: 400px;
   overflow: hidden;
   background-color: rgba(58, 175, 169,.9);
-
   border-radius: 10%; 
 }
 
@@ -91,7 +90,6 @@ h2 {
   width: 100%;
   height: 100%;
   background-color: rgba(58, 175, 169,.9);
-
   color: #edf6f9;
   font-family: 'Helvetica', 'Times New Roman', sans-serif;
   font-size: 1em;
@@ -188,9 +186,6 @@ width: 100%;
 }
 
 
-
-
-
 /* Form complete */
 
 button[type="submit"]{
@@ -251,10 +246,136 @@ button[type="submit"]{
 .form-box-shadow {
   /* Add a box-shadow to the form */
   box-shadow: 0 5px 10px rgba(58, 175, 169,.9), 0 6px 20px rgba(58, 175, 169,.9);
-  padding: 20px; 
+  padding: 1em; 
 }
 
 .binodpic{
   box-shadow: 0 5px 10px #edf6f9, 0 6px 20px rgba(58, 175, 169,.9);
-  padding: 20px; 
+  padding: 1em; 
+}
+
+@media (max-width: 900px) and (min-width: 575px){
+  .projects {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 175, 169,.9);
+    color: #edf6f9;
+    font-family: 'Helvetica', 'Times New Roman', sans-serif;
+    font-size: 1em;
+    padding-top: 1em;
+    border-radius: 1%;
+  }
+
+  .img-fluid{
+    width: 12em; 
+    height: 25em; 
+  }
+  
+  .aboutmeimage{
+    border-radius: 30%;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    height: 30em;
+    width: 15em;
+    background-color: #17252A;
+    color: #DEF2F1; 
+  }
+  
+  h1 {
+    font-weight: bolder;
+    font-size: 2.8em;
+  }
+
+  .picture-card {
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background-color: rgba(58, 175, 169,.9);
+    border-radius: 10%; 
+  }
+  
+}
+
+@media (max-width: 576px) {
+  .container{
+    overflow: hidden; 
+  }
+  .picture-card {
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: rgba(58, 175, 169,.9);
+    border-radius: 10%; 
+  }
+  .img-fluid{
+    width: 13em; 
+    height: 25em; 
+  }
+  
+  .aboutmeimage{
+    border-radius: 50%;
+  }
+  
+ .projects {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 175, 169,.9);
+    color: #edf6f9;
+    font-family: 'Helvetica', 'Times New Roman', sans-serif;
+    font-size: 1em;
+    padding-top: 1em;
+    border-radius: 1%;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    height: 27em;
+    width: 100%;
+    background-color: #17252A;
+    color: #DEF2F1; 
+  }
+  h1 {
+    font-weight: bolder;
+    font-size: 1.8em;
+  }
+
+  p {
+    line-height: 2em;
+    letter-spacing: .02em;
+  }
+  
+}
+@media (max-height: 630px) {
+  .img-fluid{
+    width: 15em; 
+    height: 25em;
+    overflow: hidden;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(58, 175, 169,.9);
+   */
+    border-radius: 1%; 
+    color: #edf6f9; 
+    background-color: rgba(58, 175, 169,.9);
+  }
+
+
 }
